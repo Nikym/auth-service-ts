@@ -1,0 +1,8 @@
+{
+  "name": "opp-auth-service",
+  "version": "1.0.0",
+  "description": "Authentication Microservice for Opponents.app",
+  "main": "index.js",
+  "author": "Nikita Melnikov <nik.y.melnikov@gmail.com>",
+  "license": "MIT"
+}
