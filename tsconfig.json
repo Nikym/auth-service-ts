@@ -3,7 +3,9 @@
     "outDir": "./build",
     "allowJs": true,
     "target": "ES2020",
-    "noEmitOnError": true
+    "noEmitOnError": true,
+    "moduleResolution": "node",
+    "module": "commonjs"
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*"],
 }
