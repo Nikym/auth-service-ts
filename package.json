@@ -1,17 +1,8 @@
 {
-  "name": "opp-auth-service",
+  "name": "auth-service",
   "version": "1.0.0",
-  "description": "Authentication Microservice for Opponents.app",
-  "main": "index.js",
+  "description": "General auth microservice boiletplate",
+  "main": "build/index.js",
   "author": "Nikita Melnikov <nik.y.melnikov@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "express": "^4.17.1",
-    "jest": "^26.6.3"
-  },
-  "devDependencies": {
-    "eslint": "^7.13.0"
-  }
+  "license": "MIT"
 }
