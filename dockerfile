@@ -9,6 +9,8 @@ COPY tsconfig.json ./
 RUN yarn
 
 COPY src ./src
+COPY tests ./tests
+RUN yarn run test
 RUN yarn run build
 
 ENTRYPOINT [ "yarn", "start" ]

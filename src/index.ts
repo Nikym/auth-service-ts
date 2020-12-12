@@ -1,7 +1,9 @@
-import app from './app';
-import auth from './routes/auth';
+import * as express from 'express';
+import api from './api';
 
-app.use('/auth', auth);
+const app = express();
+
+app.use('/api/v1', api);
 
 app.listen({ port: 8000 }, () => {
   console.log('*** STARTED AUTH MICROSERVICE ***');
