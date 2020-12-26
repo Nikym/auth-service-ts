@@ -17,18 +17,18 @@ describe('Register controller', () => {
   });
 
   it('returns error when given invalid body', () => {
-    const expectedReponse = {
+    const expectedResponse = {
       error: 'Body must contain username and password',
     };
 
     register(mockRequest as Request, mockResponse as Response);
 
     expect(mockResponse.status).toBeCalledWith(400);
-    expect(mockResponse.json).toBeCalledWith(expectedReponse);
+    expect(mockResponse.json).toBeCalledWith(expectedResponse);
   });
 
   it('returns error if username length is invalid', () => {
-    const expectedReponse = {
+    const expectedResponse = {
       error: 'Username must be 3 or more characters long',
     };
 
@@ -39,11 +39,11 @@ describe('Register controller', () => {
     register(mockRequest as Request, mockResponse as Response);
 
     expect(mockResponse.status).toBeCalledWith(400);
-    expect(mockResponse.json).toBeCalledWith(expectedReponse);
+    expect(mockResponse.json).toBeCalledWith(expectedResponse);
   });
 
   it('returns error if password length is invalid', () => {
-    const expectedReponse = {
+    const expectedResponse = {
       error: 'Password must be 8 or more characters long',
     };
 
@@ -54,7 +54,7 @@ describe('Register controller', () => {
     register(mockRequest as Request, mockResponse as Response);
 
     expect(mockResponse.status).toBeCalledWith(400);
-    expect(mockResponse.json).toBeCalledWith(expectedReponse);
+    expect(mockResponse.json).toBeCalledWith(expectedResponse);
   });
 
   it('returns HTTP 200 if registration successful', () => {

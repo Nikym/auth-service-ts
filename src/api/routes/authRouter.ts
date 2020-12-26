@@ -1,11 +1,9 @@
 import Router from 'express-promise-router';
 
-import { register } from '../controllers';
+import { register, login } from '../controllers';
 
 export const authRouter = Router();
 
-authRouter.get('/login', (req, res) => {
-  res.send('login');
-});
+authRouter.post('/login', login);
 
 authRouter.post('/register', register);
